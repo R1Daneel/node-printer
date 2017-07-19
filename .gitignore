@@ -3,5 +3,6 @@ build/*
 .settings
 .c9*
 node_modules/*
-*.node
 *.swp
+.DS_Store
+.idea/
