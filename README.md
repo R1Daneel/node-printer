@@ -50,7 +50,7 @@ I was involved in a project where I need to print from Node.JS. This is the reas
 * `getSupportedJobCommands()` to get supported job commands for setJob() depends on OS. `'CANCEL'` command is supported from all OS-es.
 
 ### NOTES:
-This package comes with two versions already built of the native code for the platforms `win32-ia21` and `darwin-64bit`. The builds are
+This package comes with two versions already built of the native code for the platforms `win32-ia32` and `darwin-64bit`. The builds are
 created to match the version `1.6.11` of `electron`. If you need to use this package for a platform different from
 the listed above or for a different version of electron you can't use it.
 

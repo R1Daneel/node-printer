@@ -1,3 +1,6 @@
+2016.09.10, version 0.2.3
+* create builds for win32-ia32 and darwin-64bit aligned with electron 1.6.11.
+
 2016.09.10, version 0.2.2
 * correct memory leak (thanks to @kjlaw89)
 
