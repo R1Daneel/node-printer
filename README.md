@@ -49,33 +49,10 @@ I was involved in a project where I need to print from Node.JS. This is the reas
 * `setJob(printerName, jobId, command)` to send a command to a job (e.g. `'CANCEL'` to cancel the job);
 * `getSupportedJobCommands()` to get supported job commands for setJob() depends on OS. `'CANCEL'` command is supported from all OS-es.
 
-
-### How to install:
-Make sure you have Python 2.x installed on your system. Windows users will also require Visual Studio (2013 Express is a good fit)
-
-from [npmjs.org](https://www.npmjs.org/package/printer)
-
-    npm install -g node-gyp
-    npm install printer --msvs_version=2013
-
-or [direct from git](https://www.npmjs.org/doc/cli/npm-install.html):
-
-    npm install git+https://github.com/tojocky/node-printer.git
-if you want to to run in [nwjs](http://nwjs.io/) then rebuild the module with [nw-gyp](https://github.com/nwjs/nw-gyp):
-```
-npm install -g nw-gyp
-cd node_modules/printer
-nw-gyp rebuild
-```
-For specific distribution `--dist-url` node-gyp parameter should be used. Example for electron:
-```
-node-gyp rebuild --target=0.37.4 --arch=x64 --dist-url=https://atom.io/download/atom-shell
-```
-
-Ubuntu User :
-You need to install libcups2-dev package
-`sudo apt-get install libcups2-dev`
-
+### NOTES:
+This package comes with two versions already built of the native code for the platforms `win32-ia32` and `darwin-64bit`. The builds are
+created to match the version `1.6.11` of `electron`. If you need to use this package for a platform different from
+the listed above or for a different version of electron you can't use it.
 
 ### How to use:
 
